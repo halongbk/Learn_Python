@@ -2,4 +2,4 @@
 Learn Python from DataCamp
  Merging DataFrames with pandas
 
-#Concatenating DataFrames from a dict
+# Concatenating DataFrames from a dict

@@ -14,3 +14,23 @@ idx = pd.IndexSlice
 
 # Print all the data on medals won by the United Kingdom
 print(medals_sorted.loc[idx[:,'United Kingdom'], :])
+
+
+medals
+                        Total
+       Country               
+bronze United States   1052.0
+       Soviet Union     584.0
+       United Kingdom   505.0
+       France           475.0
+       Germany          454.0
+silver United States   1195.0
+       Soviet Union     627.0
+       United Kingdom   591.0
+       France           461.0
+       Italy            394.0
+gold   United States   2088.0
+       Soviet Union     838.0
+       United Kingdom   498.0
+       Italy            460.0
+       Germany          407.0

@@ -1,0 +1,38 @@
+# Merge revenue with managers on 'city': merge_by_city
+merge_by_city = pd.merge(revenue, managers, on='city')
+
+# Print merge_by_city
+print(merge_by_city)
+
+# Merge revenue with managers on 'branch_id': merge_by_id
+merge_by_id = pd.merge(revenue, managers, on='branch_id')
+
+# Print merge_by_id
+print(merge_by_id)
+
+revenue
+          city  branch_id  revenue
+0       Austin         10      100
+1       Denver         20       83
+2  Springfield         30        4
+3    Mendocino         47      200
+
+managers
+          city  branch_id  manager
+0       Austin         10  Charles
+1       Denver         20     Joel
+2    Mendocino         47    Brett
+3  Springfield         31    Sally
+
+merge_by_city
+          city  branch_id_x  revenue  branch_id_y  manager
+0       Austin           10      100           10  Charles
+1       Denver           20       83           20     Joel
+2  Springfield           30        4           31    Sally
+3    Mendocino           47      200           47    Brett
+
+merge_by_id
+      city_x  branch_id  revenue     city_y  manager
+0     Austin         10      100     Austin  Charles
+1     Denver         20       83     Denver     Joel
+2  Mendocino         47      200  Mendocino    Brett
